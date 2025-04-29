@@ -1,8 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "motion/react"
 
 
 export const Home = () => {
+
+    onst [videoSrc, setVideoSrc] = useState("");
+
+    useEffect(() => {
+        const isProbablyDesktop = () => {
+          const width = window.innerWidth;
+          const userAgent = navigator.userAgent;
+          const isMac = /Macintosh/.test(userAgent);
+          const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+      
+          return width > 1024 && (isMac || !isIOS);
+        };
+      
+        if (isProbablyDesktop()) {
+          console.log("Es escritorio o Mac compatible");
+          setVideoSrc("https://res.cloudinary.com/dy6x06uoe/video/upload/v1745637436/Portfolio_Animation_wanneb.webm");
+        } else {
+          console.log("Es iOS o pantalla pequeña");
+          setVideoSrc("https://res.cloudinary.com/dy6x06uoe/video/upload/v1745945465/Portfolio_Animation_dvi9jk.mp4");
+        }
+      }, []);
+
     return (
         <div className='flex flex-col justify-center h-[87dvh] md:h-[88dvh]' id='home'>
 
@@ -80,19 +102,15 @@ export const Home = () => {
                 </motion.div>
 
                 {/* video */}
-                {/* <motion.div className='hidden lg:block mb-20 w-[1000px] bg-[#04152D] '
-                    initial={{ y: -100, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .5, ease: "easeInOut", delay: .8 }}
+               
+                <motion.div className='hidden lg:block mb-20 w-[1000px] '
+                    initial={{y: -100, opacity: 0}}
+                    animate= {{y: 0, opacity: 1}}
+                    transition={{ duration: .5, ease: "easeInOut", delay: .8}} 
                 >
-                    <video preload='auto' autoPlay muted loop disablePictureInPicture className='w-auto h-auto border' >
-                            <source 
-                                src="https://res.cloudinary.com/dy6x06uoe/video/upload/v1745637436/Portfolio_Animation_wanneb.webm"
-
-                            />
-                    </video>
-
-                </motion.div> */}
+                    <video preload='auto' autoPlay muted loop disablePictureInPicture className='w-auto h-auto' src = {videoSrc} />
+                    
+                </motion.div>
 
             </section>
         </div>
