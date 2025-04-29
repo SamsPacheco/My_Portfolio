@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 export const Home = () => {
 
-    onst [videoSrc, setVideoSrc] = useState("");
+    const [videoSrc, setVideoSrc] = useState("");
 
     useEffect(() => {
         const isProbablyDesktop = () => {
@@ -23,7 +23,7 @@ export const Home = () => {
           console.log("Es iOS o pantalla pequeña");
           setVideoSrc("https://res.cloudinary.com/dy6x06uoe/video/upload/v1745945465/Portfolio_Animation_dvi9jk.mp4");
         }
-      }, []);
+      }, []);   
 
     return (
         <div className='flex flex-col justify-center h-[87dvh] md:h-[88dvh]' id='home'>
