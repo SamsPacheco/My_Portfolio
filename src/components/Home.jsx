@@ -80,23 +80,19 @@ export const Home = () => {
                 </motion.div>
 
                 {/* video */}
-                <motion.div className='hidden lg:block mb-20 w-[1000px] bg-[#04152D] '
+                {/* <motion.div className='hidden lg:block mb-20 w-[1000px] bg-[#04152D] '
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: .5, ease: "easeInOut", delay: .8 }}
                 >
-                    {/* <video preload='auto' autoPlay muted loop disablePictureInPicture className='w-auto h-auto border' >
+                    <video preload='auto' autoPlay muted loop disablePictureInPicture className='w-auto h-auto border' >
                             <source 
                                 src="https://res.cloudinary.com/dy6x06uoe/video/upload/v1745637436/Portfolio_Animation_wanneb.webm"
 
                             />
-                    </video> */}
-                    <video autoPlay muted loop playsInline className="bg-[#04152D] object-cover">
-                        <source src="https://res.cloudinary.com/dy6x06uoe/video/upload/v1745637436/Portfolio_Animation_wanneb.webm" type="video/webm" />
-                        <source src="https://res.cloudinary.com/dy6x06uoe/video/upload/e_background:04152D,f_mp4/v1745637436/Portfolio_Animation_wanneb" type="video/mp4" />
                     </video>
 
-                </motion.div>
+                </motion.div> */}
 
             </section>
         </div>
