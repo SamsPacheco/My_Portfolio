@@ -4,7 +4,7 @@ import { motion, useInView } from "motion/react"
 export const About = () => {
 
     const ref = useRef(null);
-    const isInview = useInView(ref, { once: true, threshold: 0.25 });
+    const isInview = useInView(ref, {once: true, threshold: 0.25})
 
 
     return (
@@ -53,7 +53,7 @@ export const About = () => {
                     {/* btns  */}
                     <div className='text-white font-semibold md:flex gap-5 mt-4 space-y-4 md:space-y-0 justify-center lg:justify-start'>
 
-                    <a href='#contactMe' className='w-[85%] mx-auto md:mx-0 md:w-[220px] md:py-3 bg-gradient-to-r from-pink-600 to-violet-600 transition py-2 rounded-[5px] md:rounded-md flex items-center justify-center gap-3 cursor-pointer'
+                        <a href='#contactMe' className='w-[85%] mx-auto md:mx-0 md:w-[220px] md:py-3 bg-gradient-to-r from-pink-600 to-violet-600 transition py-2 rounded-[5px] md:rounded-md flex items-center justify-center gap-3 cursor-pointer'
                         >
                             <i className="uil uil-comment-alt-check text-2xl"></i> Contact Me
                         </a>
@@ -75,12 +75,12 @@ export const About = () => {
             </motion.section>
 
             {/* projects / certifications / experiences */}
-            <motion.section className='md:flex md:items-center gap-5 mt-8 py-3 overflow-hidden space-y-3'
+            <motion.section className='md:flex md:items-center gap-5 mt-8 py-3 overflow-hidden space-y-3 md:space-y-0'
                 ref={ref}
                 initial={{ y: -100, opacity: 0 }}
                 animate={isInview && { y: 0, opacity: 1 }}
-                transition={{ duration: .5, ease: "easeInOut", delay: .3}}
-             >
+                transition={{ duration: .5, ease: "easeInOut" }}
+            >
                 <article className='flex-1 py-5 bg-[#1e324e] rounded-lg space-y-4'
                 >
                     <div className='flex justify-between px-5'>

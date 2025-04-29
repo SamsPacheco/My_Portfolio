@@ -6,7 +6,7 @@ export const View01 = () => {
   return (
     <>
         <motion.div className="w-full h-screen bg-[#04152D] flex justify-center items-center view" 
-            //  exit={{ opacity: [1, 0.6, 0.3, 0], scale: 0.8 }}
+             exit={{ opacity: [1, 0.6, 0.3, 0], scale: 0.8 }}
             >
             <section className="w-full h-[200px] flex flex-col justify-center items-center">
                 {/* icons */}

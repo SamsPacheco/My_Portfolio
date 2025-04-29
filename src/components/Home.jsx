@@ -10,9 +10,9 @@ export const Home = () => {
 
                 {/* text */}
                 <motion.div className='flex-1 space-y-6 py-5 md:py-10'
-                    initial={{y: -100, opacity: 0}}
-                    animate= {{y: 0, opacity: 1}}
-                    transition={{ duration: .5, ease: "easeInOut", delay: .8}} 
+                    initial={{ y: -100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: .5, ease: "easeInOut", delay: .8 }}
                 >
 
                     <div>
@@ -52,7 +52,7 @@ export const Home = () => {
                             Hire Me
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1Cj-Hnn-cZJBtXoheL7RG7xRK1z-Jr5ID/view?usp=sharing" target="_blank" rel="noopener noreferrer"  className='text-white w-[80%] mx-auto md:w-60  md:m-0 py-3 bg-black rounded-md flex justify-center items-center gap-3 shadow-btns cursor-pointer'
+                        <a href="https://drive.google.com/file/d/1Cj-Hnn-cZJBtXoheL7RG7xRK1z-Jr5ID/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='text-white w-[80%] mx-auto md:w-60  md:m-0 py-3 bg-black rounded-md flex justify-center items-center gap-3 shadow-btns cursor-pointer'
                         >
                             Download CV
                             <i className="uil uil-import"></i>
@@ -80,17 +80,22 @@ export const Home = () => {
                 </motion.div>
 
                 {/* video */}
-                <motion.div className='hidden lg:block mb-20 w-[1000px] '
-                    initial={{y: -100, opacity: 0}}
-                    animate= {{y: 0, opacity: 1}}
-                    transition={{ duration: .5, ease: "easeInOut", delay: .8}} 
+                <motion.div className='hidden lg:block mb-20 w-[1000px] bg-[#04152D] '
+                    initial={{ y: -100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: .5, ease: "easeInOut", delay: .8 }}
                 >
-                    <video preload='auto' autoPlay muted loop disablePictureInPicture className='w-auto h-auto' >
+                    {/* <video preload='auto' autoPlay muted loop disablePictureInPicture className='w-auto h-auto border' >
                             <source 
                                 src="https://res.cloudinary.com/dy6x06uoe/video/upload/v1745637436/Portfolio_Animation_wanneb.webm"
-                                type="video/webm"
+
                             />
+                    </video> */}
+                    <video autoPlay muted loop playsInline className="bg-[#04152D] object-cover">
+                        <source src="https://res.cloudinary.com/dy6x06uoe/video/upload/v1745637436/Portfolio_Animation_wanneb.webm" type="video/webm" />
+                        <source src="https://res.cloudinary.com/dy6x06uoe/video/upload/e_background:04152D,f_mp4/v1745637436/Portfolio_Animation_wanneb" type="video/mp4" />
                     </video>
+
                 </motion.div>
 
             </section>
