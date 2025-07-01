@@ -74,7 +74,7 @@ export const Home = () => {
                             Hire Me
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1Cj-Hnn-cZJBtXoheL7RG7xRK1z-Jr5ID/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='text-white w-[80%] mx-auto md:w-60  md:m-0 py-3 bg-black rounded-md flex justify-center items-center gap-3 shadow-btns cursor-pointer'
+                        <a href="https://drive.google.com/file/d/1J11oeQf6ONdGC35WfrYqEHqTkLa3uJrx/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='text-white w-[80%] mx-auto md:w-60  md:m-0 py-3 bg-black rounded-md flex justify-center items-center gap-3 shadow-btns cursor-pointer'
                         >
                             Download CV
                             <i className="uil uil-import"></i>

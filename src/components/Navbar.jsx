@@ -56,7 +56,7 @@ export const Navbar = () => {
           </ul>
         </div>
 
-          <a href="https://drive.google.com/file/d/1Cj-Hnn-cZJBtXoheL7RG7xRK1z-Jr5ID/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='hidden bg-amber-50 text-[#04152D] rounded-md font-semibold w-[180px] h-10 md:flex justify-center items-center gap-2 cursor-pointer'>Download CV
+          <a href="https://drive.google.com/file/d/1J11oeQf6ONdGC35WfrYqEHqTkLa3uJrx/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='hidden bg-amber-50 text-[#04152D] rounded-md font-semibold w-[180px] h-10 md:flex justify-center items-center gap-2 cursor-pointer'>Download CV
             <i className="uil uil-file-alt text-lg"></i>
           </a>
           {/* <i class="uil uil-file-alt"></i> */}
